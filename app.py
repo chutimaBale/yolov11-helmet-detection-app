@@ -37,5 +37,5 @@ if uploaded_image is not None:
   # Count helmet
   helmet_count = class_names.count("helmet")
   st.write(f"Number of people with helmet detected: **{helmet_count}**")
-  without_helmet_count = class_names.count("w/o_helmet")
-  st.write(f"Number of people without helmet detected: **{without_helmet_count}**")
+  # without_helmet_count = class_names.count("w/o_helmet")
+  # st.write(f"Number of people without helmet detected: **{without_helmet_count}**")
