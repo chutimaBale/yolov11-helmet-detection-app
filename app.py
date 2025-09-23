@@ -35,7 +35,7 @@ if uploaded_image is not None:
   class_names = [model.names[i] for i in class_ids]
 
   # Count helmet
-  helmet_count = class_names.count("helmet")
+  helmet_count = class_names.count("Helmet")
   st.write(f"Number of people with helmet detected: **{helmet_count}**")
-  # without_helmet_count = class_names.count("w/o_helmet")
-  # st.write(f"Number of people without helmet detected: **{without_helmet_count}**")
+  without_helmet_count = class_names.count("Without-Helmet")
+  st.write(f"Number of people without helmet detected: **{without_helmet_count}**")
