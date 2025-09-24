@@ -8,8 +8,8 @@ st.title("YOLO Image Detection App :)")
 st.write("**Helmet Detection: -Demo-**")
 
 # Load YOLO model
-model = YOLO("weights/best.pt")
-# model = YOLO("runs/detect/train/weights/best.pt")
+# model = YOLO("weights/best.pt")
+model = YOLO("runs/detect/train/weights/best.pt")
 
 # Upload image
 uploaded_image = st.file_uploader("Upload an image (jpg, png)", type=["jpg", "jpeg", "png"])
