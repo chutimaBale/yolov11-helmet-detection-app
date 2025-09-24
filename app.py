@@ -7,7 +7,7 @@ st.title("YOLO Helmet Detection App :)")
 
 # Load YOLO model
 # model = YOLO("runs/detect/train73/weights/best.pt")
-model = YOLO("runs/detect/train/weights/best.pt")
+model = YOLO("runs/detect/train11/weights/best.pt")
 
 # Upload image
 uploaded_image = st.file_uploader("Upload an image (jpg, png)", type=["jpg", "jpeg", "png"])
@@ -39,4 +39,3 @@ if uploaded_image is not None:
   st.write(f"Number of people with helmet detected: **{helmet_count}**")
   without_helmet_count = class_names.count("Without-Helmet")
   st.write(f"Number of people without helmet detected: **{without_helmet_count}**")
-                
