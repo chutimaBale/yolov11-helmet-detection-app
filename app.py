@@ -6,7 +6,7 @@ import numpy as np
 st.title("YOLO Helmet Detection App :)")
 
 # Load YOLO model
- model = YOLO("runs/detect/train_11n/best.pt")
+model = YOLO("runs/detect/train_11n/best.pt")
 # model = YOLO("runs/detect/train_11s/best.pt")
 # model = YOLO("runs/detect/train_11l/best.pt")
 
